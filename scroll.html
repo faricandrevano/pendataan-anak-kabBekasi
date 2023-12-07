@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <style>
+    .clearHeader {
+      height: 2000px;
+      background-color: rgba(107, 107, 107, 0.66);
+      position: fixed;
+      top: 200;
+      width: 100%;
+      transition: ease all 1s;
+      -webkit-transition: ease all 1s;
+      -moz-transition: ease all 1s;
+      -o-transition: ease all 1s;
+    }
+
+    .darkHeader {
+      background-color: #333;
+      height: 1000px;
+    }
+
+    .wrapper {
+      height: 2000px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="clearHeader">
+  </header>
+
+  <div class="wrapper">
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    $(window).scroll(function () {
+
+      var scroll = $(window).scrollTop();
+
+      if (scroll >= 500) {
+        $(".clearHeader").addClass("darkHeader");
+      } else {
+        $(".clearHeader").removeClass("darkHeader")
+      }
+    });
+  </script>
+</body>
+
+</html>

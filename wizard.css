@@ -1,0 +1,257 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.f1-steps {
+  overflow: hidden;
+  position: relative;
+  margin-top: 20px;
+}
+
+.f1-progress {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #ddd;
+}
+
+.f1-progress-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1px;
+  background: #165fde;
+}
+
+.f1-step {
+  position: relative;
+  float: left;
+  width: 50%;
+  padding: 0 5px;
+}
+
+.f1-step-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-top: 4px;
+  background: #ddd;
+  font-size: 16px;
+  color: #fff;
+  line-height: 40px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.f1-step.activated .f1-step-icon {
+  background: #fff;
+  border: 1px solid #165fde;
+  color: #165fde;
+  line-height: 38px;
+}
+
+.f1-step.active .f1-step-icon {
+  width: 48px;
+  height: 48px;
+  margin-top: 0;
+  background: #165fde;
+  font-size: 22px;
+  line-height: 48px;
+}
+
+.f1-step p {
+  color: #ccc;
+}
+
+.f1-step.activated p {
+  color: #165fde;
+}
+
+.f1-step.active p {
+  color: #165fde;
+}
+
+.f1 fieldset {
+  display: none;
+  text-align: left;
+}
+
+.f1-buttons {
+  text-align: right;
+}
+
+.f1 .input-error {
+  border-color: #f35b3f;
+}
+
+/* STYLE INPUT FILE */
+
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.inputfile+label {
+  font-size: 1em;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 700;
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  display: inline-block;
+}
+
+.inputfile:focus+label,
+.inputfile+label:hover {
+  background-color: white;
+  color: #000;
+  border: 1px solid black;
+}
+
+.inputfile+label {
+  cursor: pointer;
+  /* "hand" cursor */
+}
+
+.inputfile:focus+label {
+  outline: 1px dotted #000;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile+label * {
+  pointer-events: none;
+}
+
+/* STYLE NAVBAR */
+
+.navbar {
+  background-color: #428ced;
+}
+
+.banner {
+  background-image: url('img/banner.svg');
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* CAROUSEL */
+
+.bg-banner-carousel {
+  background-image: url("img/banner.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* SEARCH */
+
+.bi-search {
+  background-color: rgb(173, 173, 173);
+}
+
+/* BUTTON */
+
+.btn-dark:hover {
+  background-color: transparent;
+  color: black;
+}
+
+/* DAFTAR */
+
+
+/* .daftar, .anak, .anda, .submit, .selesai {
+  background-color: #ccc;
+  width: min-content;
+  height: 50px;
+  width: 50px;
+  transition: 1s;
+  border-radius: 50%;
+} */
+
+.daftar,
+.anak,
+.anda,
+.submit,
+.selesai {
+  background-color: #428ced;
+  color: white;
+  width: min-content;
+  height: 50px;
+  width: 50px;
+  transition: 1s;
+  border-radius: 50%;
+}
+
+.scrollDaftar,
+.scrollAnak,
+.scrollAnda,
+.scrollSubmit,
+.scrollSelesai {
+  background-color: #428ced;
+  width: min-content;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transition: 1s;
+  color: white;
+}
+
+/* .garisDaftar,
+.garisAnak,
+.garisAnda,
+.garisSubmit {
+  height: 100px;
+  width: 3px;
+  transition: 1s;
+  background-color: #ccc;
+} */
+
+.garisDaftar,
+.garisAnak,
+.garisAnda,
+.garisSubmit {
+  height: 70px;
+  width: 3px;
+  transition: 1s;
+  background-color: #428ced;
+}
+
+.garisDaftarScroll {
+  height: 100px;
+  width: 3px;
+  background-color: #428ced;
+  transition: 1s;
+}
+
+/* GARIS */
+
+.garis {
+  height: 100px;
+  width: 3px;
+  background-color: #ccc;
+}
+
+.syarat {
+  background-image: url('img/banner.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.syarat-icon {
+  height: 50px;
+  width: 50px;
+  color: #428ced;
+  background-color: white;
+  border-radius: 10px;
+}

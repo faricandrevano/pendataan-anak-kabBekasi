@@ -1,0 +1,14 @@
+RewriteEngine On
+
+Options -Indexes
+
+# BAGIAN HALAMAN UTAMA #
+RewriteRule ^home$ index.php [NC,L]
+RewriteRule ^daftar$ daftardonk.php [NC,L]
+RewriteRule ^pencarian-nik nik_search.php [NC,L]
+RewriteRule ^sukses$ sukses.php [NC,L]
+
+# BAGIAN HALAMAN ADMIN #
+RewriteRule ^login-admin$ admin/login.php [NC,L]
+RewriteRule ^logout-admin$ admin/logout.php [NC,L]
+RewriteRule ^dashboard$ admin/index.php [NC,L]

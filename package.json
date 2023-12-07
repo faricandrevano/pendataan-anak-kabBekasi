@@ -1,0 +1,19 @@
+{
+  "name": "pendataanfx",
+  "version": "1.0.0",
+  "description": "pendataan Anak umur 5-6 tahun",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faricandrevano/pendataan-anak-kabBekasi.git"
+  },
+  "author": "faric",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/faricandrevano/pendataan-anak-kabBekasi/issues"
+  },
+  "homepage": "https://github.com/faricandrevano/pendataan-anak-kabBekasi#readme"
+}
